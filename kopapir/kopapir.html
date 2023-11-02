@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kő, papír, olló</title>
+    <link rel="stylesheet" href="kopapir.css">
+    <script src="kopapir.js"></script>
+</head>
+</head>
+<body onload="init()">
+
+    <div class="container">
+        <h1 id="h1"></h1>
+    </div>
+    <div class="container">
+        <img src="./images/stone.jpg" width="200" height="200" onclick="pick('rock')" id="ownRock">
+        <img src="./images/paper.jpg" width="200" height="200" onclick="pick('paper')" id="ownPaper">
+        <img src="./images/scissors.jpg" width="200" height="200" onclick="pick('scissors')" id="ownScissors">
+    </div>
+
+    <div class="container">
+        <img src="./images/stone.jpg" width="200" height="200" id="rock" class="invisible">
+        <img src="./images/paper.jpg" width="200" height="200" id="paper" class="invisible">
+        <img src="./images/scissors.jpg" width="200" height="200" id="scissors" class="invisible">
+    </div>
+
+    <div class="container">
+        <button onclick="restart()">Újra</button>
+    </div>
+    </div>
+</body>
+</html>
